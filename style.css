@@ -20,14 +20,11 @@
   text-decoration: underline;
 } */
 
-
-
 p:first-child {
   text-align: left;
   width: 400px;
   background-color: grey;
 }
-
 
 div {
   background-color: darkgoldenrod;
@@ -35,34 +32,36 @@ div {
 
 /* Jednostki względne  */
 
-.relativeFonts{
-    background-color: inherit;
+.relativeFonts {
+  background-color: inherit;
 }
 
 /* 1 rem = 16px domyslnie */
 
 /* nadpisanie wysokosci roota co do fontu */
-html{
+html {
   font-size: 10px;
 }
 
-
-.parent{
-  font-size: 1.5em; 
+.parent {
+  font-size: 1.5em;
 }
 
-.child1{
-  font-size: 2em; 
+.child1 {
+  font-size: 2em;
 }
 
-.child2{
+.child2 {
   font-size: 0.75em;
 }
 
-.secondChild1{
+.secondChild1 {
   font-size: 3em;
 }
 
+footer {
+  display: none;
+}
 
 /* CSS rules - @media queries */
 /* obsłuzyc podstawowe break points */
@@ -108,6 +107,27 @@ html{
   .box {
     border-color: red;
     background-color: greenyellow;
+  }
+
+  /* footer and icon styles added by Piotr*/
+  footer {
+    display: block;
+    height: 50px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+  footer ul li{
+    transition: 0.5s;
+  }
+  footer ul li:hover {
+    scale: 1.2;
   }
 }
 
