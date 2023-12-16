@@ -33,13 +33,14 @@ div {
 /* Jednostki względne  */
 
 .relativeFonts {
-	background-color: inherit;
+  background-color: inherit;
 }
 
 /* 1 rem = 16px domyslnie */
 
 /* nadpisanie wysokosci roota co do fontu */
 html {
+
 	font-size: 10px;
 }
 
@@ -93,6 +94,9 @@ img {
   background-color: rgb(235, 216, 216);
 }
 
+footer {
+  display: none;
+}
 
 /* CSS rules - @media queries */
 /* obsłuzyc podstawowe break points */
@@ -132,16 +136,38 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	.shortText,
-	.longText {
-		background-color: darkgreen;
-		color: gold;
-	}
+  .shortText,
+  .longText {
+    background-color: darkgreen;
+    color: gold;
+  }
 
-	.box {
-		border-color: red;
-		background-color: greenyellow;
-	}
+  .box {
+    border-color: red;
+    background-color: greenyellow;
+  }
+
+  /* footer and icon styles added by Piotr*/
+  footer {
+    display: block;
+    height: 50px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+  footer ul li{
+    transition: 0.5s;
+  }
+  footer ul li:hover {
+    scale: 1.2;
+  }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
